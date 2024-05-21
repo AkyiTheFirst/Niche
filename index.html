@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="icon"
+            href="./resources/title-logo.jpeg"
+            type="image/x-icon"
+        />
+    <title>NICHE : Digital Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--Modal box that pops up-->
+    <dialog id = "modal" class = "modal">
+        <button class="modal-btn">x</button>
+        <p>Work with us</p>
+        <form>
+            <input type="text" class = "contact-area" placeholder="Your Name" id = "name" required>
+            <input type="tel" class = "contact-area" placeholder="Your Phone Number" id = "phone" required>
+            <input type="email" class = "contact-area" placeholder="E-Mail" id = "email" required>
+            <input type="text" class = "contact-area" placeholder="Your Bussiness Name" id = "bussiness-name" required>
+            <div class="selection-container">
+                <select name="bussiness-type" id="bussiness-type" class="contact-area">
+                    <option value="0" disabled selected hidden>Bussiness Type</option>
+                    <option value="edu" class="type">Education</option>
+                    <option value="beauty" class="type">Cosmetics</option>
+                    <option value="personal" class="type">Personal Branding</option>
+                    <option value="others" class="type">Others</option>
+                </select>
+                <select name="location" id="location" class="contact-area">
+                    <option value="0" disabled selected hidden>Bussiness Location</option>
+                    <option value="ygn">Yangon</option>
+                    <option value="mdy">Mandalay</option>
+                    <option value="onl">Online</option>
+                    <option value="others">Others</option>
+                </select>
+            </div> 
+            <textarea name="proposal" id="proposal" rows = "5" class = "contact-area" placeholder="Specifications on what you want for your bussiness (Not required)"></textarea>        
+            <button type="submit">Send</button>
+            <p id="message"></p>
+        </form>
+    </dialog>
+
+
+    <header>
+        <nav class = "nav-bar">
+            <div class = "nav-container">
+                <div class="nav-logo">
+                    <img src="./resources/title-logo.jpeg" alt="Niche Logo" class = "nav-logo-img">
+                    <div class="nav-logo-text">
+                        <h1 class="nav-logo-title">NICHE</h1>
+                        <h3 class="nav-logo-sub">Turn Needs into Results</h3>
+                    </div>
+                </div>
+                <ul class="nav-categories">
+                    <li class="nav-category"><a href="#home-page">Home</a></li>
+                    <li class="nav-category"><a href="#special-service">Special Service</a></li>
+                    <li class="nav-category"><a href="#packages">Packages</a></li>
+                    <li class="nav-category"><a href="./aboutus.html" class = "aboutus-link">About Us</a></li>
+                </ul>
+                <button class = "nav-btn">Contact Us</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home-page" id = "home-page">
+        <div class="home-container">
+            <article class = "home-left">
+                <div class="home-title">
+                    <h3 class="welcome">Welcome To</h3>
+                    <h1 class="niche title">NICHE</h1>
+                </div>
+                <div class="home-text">
+                    <p class="home-p1">Your unique marketing team</p>
+                    <p class="home-p2">We create custom-made marketing plans just for you. 
+                        Think of us as your <b>own mobile marketing crew</b>, 
+                        focusing on what you need to make your brand to lead the market. 
+                        We're all about being creative, knowing your stuff, and giving you special tips just for you. 
+                        Trust us, we'll make your brand stand out.</p>
+                </div>
+            </article>
+            <article class = "home-right">
+                <img src="./resources/Niche Home IMG.png" alt="Custom-made Marketing" class = "home-img">
+            </article>
+        </div>
+    </section>
+
+    <section class = "special-service" id = "special-service">
+        <article class="special-banner">
+            <h1 class = "special-banner-title">CUSTOM-MADE SERVICE</h1>
+        </article>
+        <article class="special-text">
+            <div class="service-container">
+                <div class="service-card">
+                    <div class="service-title">
+                        <div class = "service-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>CONTENT MARKETING</h3>
+                    </div>
+                    <hr>
+                    <ul class="service-items">
+                        <li class="service-item">Building Expert Power</li>
+                        <li class="service-item">Daily Contents</li>
+                        <li class="service-item">Video Contents</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-title">
+                        <div class = "service-icon">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h3>SOCIAL MEDIA CAMPAIGN</h3>
+                    </div>
+                    <hr>
+                    <ul class="service-items">
+                        <li class="service-item">Seasonal Campaigns</li>
+                        <li class="service-item">Engaging Campaigns</li>
+                        <li class="service-item">Promotion and Advertising</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-title">
+                        <div class = "service-icon">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h3>ADVERTISING AND MEDIA BUYING</h3>
+                    </div>
+                    <hr>
+                    <ul class="service-items">
+                        <li class="service-item">Use 100 USD</li>
+                        <li class="service-item">Sale Reply System</li>
+                        <li class="service-item">Brand Advertising Video</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article class="special-offer">
+            <h1 class="special-price">890,000 MMK per Month</h1>
+            <!--h3 class="special-duration">Duration 3 Months</h3-->
+        </article>
+    </section>
+
+    <section class="packages" id = "packages">
+        <article class="package-left">
+            <ul class="packages-list">
+            </ul>
+        </article>
+        <article class="package-right">
+            <h1 class="package-title"></h1>
+            <ul class="package-content-list">
+            </ul>
+            <p class="package-info"></p>
+        </article>
+    </section>
+
+    <footer>
+        <div class = "contact-us">
+            <p>Contact Us using our Socials</p>
+            <div class="contact-info-container">
+                <a href="mailto:niche.custommade@gmail.com" class="email" mailto = ""><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://m.me/niche.solution.com" class="hotline"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61559257380154&mibextid=LQQJ4d" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src = "./indexScript.js"></script>
+    <script src = "./script.js"></script>
+</body>
+</html>

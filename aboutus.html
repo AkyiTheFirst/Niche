@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+            rel="icon"
+            href="./resources/title-logo.jpeg"
+            type="image/x-icon"
+        />
+    <title>NICHE : Digital Marketing</title>
+    <link rel="stylesheet" href="style.css">
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <dialog id = "modal" class = "modal">
+        <button class="modal-btn">x</button>
+        <p>Work with us</p>
+        <form>
+            <input type="text" class = "contact-area" placeholder="Your Name" id = "name" required>
+            <input type="tel" class = "contact-area" placeholder="Your Phone Number" id = "phone" required>
+            <input type="email" class = "contact-area" placeholder="E-Mail" id = "email" required>
+            <input type="text" class = "contact-area" placeholder="Your Bussiness Name" id = "bussiness-name" required>
+            <div class="selection-container">
+                <select name="bussiness-type" id="bussiness-type" class="contact-area">
+                    <option value="0" disabled selected hidden>Bussiness Type</option>
+                    <option value="edu" class="type">Education</option>
+                    <option value="beauty" class="type">Cosmetics</option>
+                    <option value="personal" class="type">Personal Branding</option>
+                    <option value="others" class="type">Others</option>
+                </select>
+                <select name="location" id="location" class="contact-area">
+                    <option value="0" disabled selected hidden>Bussiness Location</option>
+                    <option value="ygn">Yangon</option>
+                    <option value="mdy">Mandalay</option>
+                    <option value="onl">Online</option>
+                    <option value="others">Others</option>
+                </select>
+            </div> 
+            <textarea name="proposal" id="proposal" rows = "5" class = "contact-area" placeholder="Specifications on what you want for your bussiness (Not required)"></textarea>        
+            <button type="submit">Send</button>
+            <p id="message"></p>
+        </form>
+    </dialog>
+
+    <header class = "about-header">
+        <nav class = "nav-bar">
+            <div class = "nav-container">
+                <div class="nav-logo">
+                    <img src="./resources/title-logo.jpeg" alt="Niche Logo" class = "nav-logo-img">
+                    <div class="nav-logo-text">
+                        <h1 class="nav-logo-title">NICHE</h1>
+                        <h3 class="nav-logo-sub">Turn Needs into Results</h3>
+                    </div>
+                </div>
+                <ul class="nav-categories">
+                    <li class="nav-category"><a href="./index.html">Home</a></li>
+                    <li class="nav-category"><a href="#team-page">Our Team</a></li>
+                    <li class="nav-category"><a href="#vision-mission">Vision and Mission</a></li>
+                    <!--li class="nav-category"><a href="#partners">Our Partners</a></li-->
+                    <li class="nav-category"><a href="#benefits">Mutual Benefits</a></li>
+                </ul>
+                <button class = "nav-btn">Contact Us</button>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="team-page" id = "team-page">
+        <h1 class = "about-title">Meet Our Team</h1>
+        <div class="team-container">
+            <article class = "display-side">
+                <!--Need More Data-->
+                <div class="team-img-container">
+                    <img src="" alt="" class = "team-img">
+                    <hr>
+                </div>
+                <div class="team-info-container">
+                    <h1 class="team-name"></h1>
+                    <h3 class="team-title"></h3>
+                    <p class="team-info"></p>
+                </div>
+            </article>
+            <article class="members-side">
+                <ul class="team-members-container">
+                    <li class="team-member"><span class="hidden-id">1</span>Akar Paing</li>
+                    <li class="team-member"><span class="hidden-id">2</span>Wiya Phyo</li>
+                    <li class="team-member"><span class="hidden-id">3</span>Khin Pyae Sone</li>
+                    <li class="team-member"><span class="hidden-id">4</span>Lu Min Aung</li>
+                    <li class="team-member"><span class="hidden-id">5</span>M Jaseng</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="vision-mission" id = "vision-mission">
+        <div class="vision-mission-container">
+            <article class="left-side">
+                <img src="./resources/Company Profile.png" alt="">
+            </article>
+            <article class="right-side">
+                <h1 class="about-title">Vision & Mission</h1>
+                <div class="vision">
+                    <h3 class="vision-title">Vision</h3>
+                    <p class="vision-text">We want to transform how businesses do marketing.
+                        Our goal is to be the top choice for brands that want 
+                        <b>special marketing strategies that really work.</b> 
+                        We aim to help businesses to be market leaders.</p>
+                </div>
+                <div class="mission">
+                    <h3 class="mission-title">Mission</h3>
+                    <p class="mission-text">Providing <b>personalized marketing solutions</b> that 
+                        precisely match the needs of each client.  By leveraging creativity, 
+                        expertise, and a focus on exclusivity, we aim to empower businesses 
+                        to achieve their marketing goals and stand out in their industries.
+                    </p>
+                </div>
+            </article>
+        </div>      
+    </section>
+
+    <!--Need more info for partners-->
+    <!--section class="partners" id = "partners">
+        <h1 class = "about-title">Our Partners</h1>
+        <div class="partners-container">
+            <article class = "display-side">
+                <div class="partners-img-container">
+                    <img src="" alt="" class = "partners-img">
+                </div>
+                <div class="partners-info-container">
+                    <h1 class="partner-name"></h1>
+                    <p class="partner-info"></p>
+                </div>
+            </article>
+            <article class="members-side">
+                <ul class="partner-members-container">
+                </ul>
+            </article>
+        </div>   
+    </section-->
+
+    <section class="benefits" id = "benefits">
+        <div class="benefits-container">
+            <article class="special-banner">
+                <h1 class = "special-banner-title">Partnership Benefits</h1>
+            </article>
+            <article class = "benefits-card-container">
+                                
+            </article>
+        </div>
+    </section>
+    
+    <footer class = "about-footer">
+        <div class = "contact-us">
+            <p>Contact Us using our Socials</p>
+            <div class="contact-info-container">
+                <a href="mailto:niche.custommade@gmail.com" class="email" mailto = ""><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://m.me/niche.solution.com" class="hotline"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61559257380154&mibextid=LQQJ4d" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src = "./aboutScript.js"></script>
+    <script src = "./script.js"></script>
+</body>
+</html>
